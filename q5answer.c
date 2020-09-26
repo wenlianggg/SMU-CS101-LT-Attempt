@@ -1,16 +1,18 @@
 /*
- * Name : Wen Liang (audit student)
+ * Name : Wen Liang
  * Email: wlgoh.2020
  */
 
 #include <stdio.h>
 #include <stdbool.h>
 
+// Function prototypes
 bool is_leap_year(int year);
 int days_in_month(int month, int year);
 int days_in_year(int year);
 int days_since_start(int d, int m, int y);
 
+// Actual logic
 int num_days_between(int d1, int m1, int y1, int d2, int m2, int y2) {
     int days1 = days_since_start(d1, m1, y1);
     int days2 = days_since_start(d2, m2, y2);
